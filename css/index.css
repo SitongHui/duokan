@@ -18,40 +18,40 @@ li{
     display:flex;
     justify-content: space-between;
 }
-.top_ul_left{
+.top_menu{
     display: flex;
 }
-.top_ul_left>li{
+.top_menu>li{
     font-size:12px;
     line-height: 36px;
 }
 .current{
     color:#333333!important;
 }
-.top_ul_left>li>a,.top_ul_left>li>span{
+.top_menu>li>a,.top_menu>li>span{
     color:#bb9a8c;
 }
-.top_ul_left>li>a{
+.top_menu>li>a{
     margin:0 12px;
 }
 .header{
     border-bottom:1px solid #eae6e2;
 }
-.top_ul_left>li:hover>a{
+.top_menu>li:hover>a{
     color:#333;
 }
-.top_ul_right{
+.top_login{
     display:flex;
 }
-.top_ul_right>li{
+.top_login>li{
     padding:9px 14px;
     font-size:12px;
     color:#613f23;
 }
-.top_ul_right>li>a{
+.top_login>li>a{
     color:#613f23;
 }
-.top_ul_right>li>a:hover,.font_color>li>a:hover,.police>a:hover,.text:hover{
+.top_login>li>a:hover,.font_color>li>a:hover,.police>a:hover,.text:hover{
     color:#ed6c00;
 }
 .shoppingcar{
@@ -141,11 +141,11 @@ li{
     margin:0 auto;
     display:flex;
 }
-.mainbox_left{
+.mainbox_nav{
     width:240px;
     margin-top:10px;
 }
-.mainbox_left>h2{
+.mainbox_nav>h2{
     color:#afa298;
     font-weight:normal;
     padding:10px 0 0 28px;
@@ -171,7 +171,7 @@ li{
 .ranklist>li:hover>a{
     color:#ee6c00;
 }
-.mainbox_right{
+.mainbox_rank{
     width:959px;
     margin-top:25px;
     border-left:1px solid #e2dcd7;
@@ -301,7 +301,7 @@ li{
     color:#a89789;
     padding:0 12px;
 }
-.top_ul_right>strong{
+.top_login>strong{
     font-size: 12px;
     font-weight: normal;
     margin:0 5px;
