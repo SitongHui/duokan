@@ -1,1 +1,6 @@
-document of gitignore
+#document of gitignore
+#HTML files
+
+/.idea/
+*.iml
+*.xml

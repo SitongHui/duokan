@@ -250,36 +250,34 @@ li{
 .nav_branch2,.nav_branch1{
     position: relative;
 }
-.nav_branch2:hover>.menulist{
+.nav_branch2:hover>.menu_list{
     display: block;
 }
-.menulist{
+.menu_list{
     border:1px solid #e8e4e0;
     border-top: none;
     position:absolute;
-    top:35px;
     left:-1px;
     z-index: 5;
     background: #fff;
     display: none;
 }
-.menulist>li{
+.menu_list>li{
     color:#613f23;
     padding:11px 15px;
     font-size:12px;
     text-align: center;
 }
-.menulist>li:hover{
+.menu_list>li:hover{
     background: #f5f5f5;
 }
-.menulist>li:hover>a{
+.menu_list>li:hover>a{
     color:#ed6c00;
 }
 .menu1{
     display:flex;
     position: absolute;
     z-index:5;
-    top:35px;
     left:-1px;
     padding:12px 14px 30px 14px;
     background: #fff;
