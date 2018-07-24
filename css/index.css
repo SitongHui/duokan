@@ -14,25 +14,27 @@ li{
 }
 .top{
     width:1200px;
+    height:36px;
     margin:0 auto;
     display:flex;
     justify-content: space-between;
 }
 .top_menu{
     display: flex;
+    align-items: center;
 }
 .top_menu>li{
     font-size:12px;
-    line-height: 36px;
+    padding:0 12px;
 }
-.current{
+.menu_current{
     color:#333333!important;
 }
-.top_menu>li>a,.top_menu>li>span{
+.top_menu>li>a{
     color:#bb9a8c;
 }
-.top_menu>li>a{
-    margin:0 12px;
+.top_menu>li:not(:last-child){
+    border-right:1px solid #bb9a8c;
 }
 .header{
     border-bottom:1px solid #eae6e2;
@@ -42,14 +44,18 @@ li{
 }
 .top_login{
     display:flex;
+    align-items: center;
 }
 .top_login>li{
-    padding:9px 14px;
+    padding:0 14px;
+    margin-left:2px;
     font-size:12px;
     color:#613f23;
 }
 .top_login>li>a{
-    color:#613f23;
+}
+.top_login>li:not(:last-child){
+    border-right:1px solid #865d2a;
 }
 .top_login>li>a:hover,.font_color>li>a:hover,.police>a:hover,.text:hover{
     color:#ed6c00;
@@ -91,9 +97,11 @@ li{
 }
 .search{
     width:1200px;
-    margin:25px auto 0 auto;
+    margin:25px auto 10px auto;
     position:relative;
-    line-height:49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .searchbox{
     width:281px;
@@ -102,13 +110,10 @@ li{
     font-size: 12px;
     padding:10px 0 10px 15px;
     outline: none;
-    color:#a6978a;
-    float:right;
-    margin-top:10px;
 }
 .searchimg{
     position: absolute;
-    top:20px;
+    top:18px;
     right:12px;
 }
 .nav{
@@ -117,23 +122,23 @@ li{
     background: #fa7a20;
     border-radius: 5px;
 }
-.nav_ul{
+.nav_menu{
     display: flex;
     margin:0 auto;
     padding-left:248px;
 }
-.nav_ul>li{
+.nav_menu>li{
 
     padding:15px 22px;
 }
-.nav_ul>li:hover{
+.nav_menu>li:hover{
     background:#f16300;
     cursor:pointer;
 }
-.nav_ul>li>a{
+.nav_menu>li>a{
     color:#fff;
 }
-.currento{
+.rankcurrent{
     background: #f16300;
 }
 .mainbox{
@@ -142,7 +147,7 @@ li{
     display:flex;
 }
 .mainbox_nav{
-    width:240px;
+    width:20%;
     margin-top:10px;
 }
 .mainbox_nav>h2{
@@ -150,9 +155,6 @@ li{
     font-weight:normal;
     padding:10px 0 0 28px;
     margin:20px 0;
-}
-.ranklist>li>a{
-    font-size:16px;
 }
 .ranklist>li{
     padding:16px 0 18px 28px;
@@ -172,27 +174,29 @@ li{
     color:#ee6c00;
 }
 .mainbox_rank{
-    width:959px;
+    width:80%;
     margin-top:25px;
     border-left:1px solid #e2dcd7;
     display:flex;
     flex-wrap:wrap;
 }
 .rank{
-    width:434px;
+    width:45%;
     padding:8px 0 20px 45px;
 }
-.rank>h2{
-    font-weight:normal;
-    display: inline;
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
-.rank>a{
-    float:right;
+.title>h2{
+    font-weight:normal;
+}
+.title>a{
     font-size:12px;
     color:#613f23;
-    line-height: 40px;
 }
-.rank>a:hover{
+.title>a:hover{
     color:#ed6c00;
 }
 .sortrank{
@@ -202,9 +206,11 @@ li{
     padding:21px 0 21px 6px;
     font-size:14px;
     border-top:1px solid #e0dad5;
+    display: flex;
+    justify-content: space-between;
 }
 .sortrank>li>a{
-    width:200px;
+    width:70%;
     display:inline-block;
     overflow: hidden;
     text-overflow:ellipsis;
@@ -217,10 +223,8 @@ li{
     color:#ed6c00;
 }
 .sortrank>li>em{
-    display:inline-block;
     font-style:normal;
-    width:150px;
-    float:right;
+    width:30%;
     font-size:12px;
     color:#999999;
     overflow: hidden;
@@ -235,7 +239,7 @@ li{
     text-overflow:ellipsis;
     white-space: nowrap;
 }
-.orange{
+.topthree{
     font-weight:bold;
     color:#ed6c00;
 
@@ -250,7 +254,6 @@ li{
     display: block;
 }
 .menulist{
-    width:100%;
     border:1px solid #e8e4e0;
     border-top: none;
     position:absolute;
@@ -300,12 +303,6 @@ li{
     font-size:12px;
     color:#a89789;
     padding:0 12px;
-}
-.top_login>strong{
-    font-size: 12px;
-    font-weight: normal;
-    margin:0 5px;
-    line-height:33px;
 }
 .box{
     display: none;
@@ -378,4 +375,6 @@ li{
     width:100px;
     margin-top:16px;
 }
-.pos:hover>
+.pos:hover>.read{
+    display: block;
+}
